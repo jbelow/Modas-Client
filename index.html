@@ -4,41 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Modas display events</title>
+
+  <!-- material design icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/materialhelper.css">
 </head>
 
 <body>
+  <div class="container">
+    <table class="table table-striped container">
+      <thead>
+        <tr>
+          <th scope="col">Flag</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody id="tableContent">
+      </tbody>
+    </table>
 
-  <div id="eventDataTable"></div>
-
-  <table class="table table-striped container">
-    <thead>
-      <tr>
-        <th scope="col">Flag</th>
-        <th scope="col">Date</th>
-        <th scope="col">Time</th>
-        <th scope="col">Location</th>
-      </tr>
-    </thead>
-    <tbody id="tableContent">
-    </tbody>
-  </table>
-  <div>
-    <button class="btn btn-primary" type="button" id="firPage">First</button>
-    <button class="btn btn-primary" type="button" id="prePage">Prevous</button>
-    <p id="displayPageInfo">Data Info</p>
-    <button class="btn btn-primary" type="button" id="nexPage">Next</button>
-    <button class="btn btn-primary" type="button" id="lasPage">Last</button>
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-primary m-1" type="button" id="firPage">First</button>
+      <button class="btn btn-primary m-1" type="button" id="prePage">Prevous</button>
+      <p id="displayPageInfo">Data Info</p>
+      <button class="btn btn-primary m-1" type="button" id="nexPage">Next</button>
+      <button class="btn btn-primary m-1" type="button" id="lasPage">Last</button>
+    </div>
   </div>
+  </div>
+  <div class="mdi mdi-flag-variant"></div>
 
 
 
-  
+
+
+
 
   <!-- jQuery framework -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- custom javascript -->
   <script src="js/client.js"></script>
